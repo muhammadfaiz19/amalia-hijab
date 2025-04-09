@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "hijab anak sekolah",
     "hijab seragam",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 

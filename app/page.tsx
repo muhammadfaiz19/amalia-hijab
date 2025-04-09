@@ -1,8 +1,8 @@
 "use client"
-import AboutSection from "@/components/AboutSection"
-import CatalogSection from "@/components/CatalogSection"
-import ContactSection from "@/components/ContactSection"
-import HeroSection from "@/components/HeroSection"
+import AboutSection from "@/components/sections/AboutSection"
+import CatalogSection from "@/components/sections/CatalogSection"
+import ContactSection from "@/components/sections/ContactSection"
+import HeroSection from "@/components/sections/HeroSection"
 import Navbar from "@/components/Navbar"
 
 export default function Home() {

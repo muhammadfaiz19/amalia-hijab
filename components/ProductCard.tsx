@@ -42,7 +42,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           src={product.image || "/placeholder.webp"}
           alt={product.name}
           fill
-          sizes="100vw"
+          sizes="100%"
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <Badge className="absolute top-2 right-2 bg-beige-100 text-beige-700 hover:bg-beige-200">

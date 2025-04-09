@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {  Rubik } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const rubik = Rubik({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--Rubik",
 });
 
 export const metadata: Metadata = {
@@ -29,8 +24,31 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://amalia-hijab.vercel.app"),
+  openGraph: {
+    title: "Amalia Hijab - Grosir Hijab Sekolah & Pashmina Premium",
+    description:
+      "Koleksi hijab sekolah dan pashmina premium dari Amalia Hijab. Supplier hijab terpercaya dengan harga grosir dan kualitas terbaik.",
+    url: "https://amalia-hijab.vercel.app",
+    siteName: "Amalia Hijab",
+    images: [
+      {
+        url: "/thumbnail.jpg", 
+        width: 1200,
+        height: 630,
+        alt: "Amalia Hijab",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amalia Hijab - Grosir Hijab Sekolah & Pashmina Premium",
+    description:
+      "Temukan koleksi hijab sekolah dan pashmina premium dari Amalia Hijab. Supplier hijab terpercaya dengan harga grosir dan kualitas terbaik.",
+    images: ["/thumbnail.jpg"], 
+  },
 };
-
 
 export default function RootLayout({
   children,
@@ -38,12 +56,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="id" className={rubik.className}>
+      <body>{children}</body>
     </html>
   );
 }

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -57,7 +58,7 @@ export default function Navbar() {
           </span>
           <a href="https://wa.me/6287813057256" target="_blank" rel="noopener noreferrer" className="hidden md:block">
             <Button variant="outline" className="border-beige-600 text-beige-700 hover:bg-beige-50">
-              <Phone className="h-4 w-4 mr-2" />
+              <FaWhatsapp className="h-4 w-4" />
               Hubungi Kami
             </Button>
           </a>
@@ -113,7 +114,7 @@ export default function Navbar() {
               <div className="pt-4 border-t border-beige-100">
                 <a href="https://wa.me/6287813057256" target="_blank" rel="noopener noreferrer" className="block">
                   <Button className="w-full bg-beige-600 hover:bg-beige-700 text-white">
-                    <Phone className="h-4 w-4 mr-2" />
+                    <FaWhatsapp className="h-4 w-4" />
                     Hubungi Kami
                   </Button>
                 </a>

@@ -1,27 +1,25 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Phone, MapPin, ShoppingBag } from "lucide-react";
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button"
+import { MapPin, ShoppingBag } from "lucide-react"
+import { FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { motion } from "framer-motion"
 
 interface ShopLinks {
-  whatsapp: string;
-  tiktok: string;
-  shopee1: string;
-  shopee2: string;
-  maps: string;
+  whatsapp: string
+  tiktok: string
+  shopee1: string
+  shopee2: string
+  maps: string
 }
 
 interface ContactSectionProps {
-  shopLinks: ShopLinks;
+  shopLinks: ShopLinks
 }
 
 export default function ContactSection({ shopLinks }: ContactSectionProps) {
   return (
-    <section
-      id="kontak"
-      className="py-16 bg-gradient-to-b from-beige-100 to-beige-200"
-    >
+    <section id="kontak" className="py-16 bg-[linear-gradient(to_right,color-mix(in_oklch,var(--beige-500)_50%,transparent),var(--beige-200))] rounded-lg">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold mb-12 text-beige-800 text-center"
@@ -40,9 +38,7 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h3 className="text-xl font-semibold text-beige-800 mb-6">
-              Kontak Kami
-            </h3>
+            <h3 className="text-xl font-semibold text-beige-800 mb-6">Kontak Kami</h3>
             <div className="space-y-6">
               <motion.div
                 className="flex items-center"
@@ -50,14 +46,11 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
                 transition={{ type: "spring", stiffness: 400 }}
               >
                 <div className="w-12 h-12 rounded-full bg-beige-100 flex items-center justify-center mr-4">
-                  <Phone className="h-5 w-5 text-beige-700" />
+                  <FaWhatsapp className="h-5 w-5 text-beige-700" />
                 </div>
                 <div>
                   <p className="font-medium text-beige-800">WhatsApp</p>
-                  <a
-                    href={shopLinks.whatsapp}
-                    className="text-beige-600 hover:underline"
-                  >
+                  <a href={shopLinks.whatsapp} className="text-beige-600 hover:underline">
                     +62 878-1305-7256
                   </a>
                 </div>
@@ -68,28 +61,11 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
                 transition={{ type: "spring", stiffness: 400 }}
               >
                 <div className="w-12 h-12 rounded-full bg-beige-100 flex items-center justify-center mr-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-beige-700"
-                  >
-                    <path d="M21 8v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5Z"></path>
-                    <path d="m10 12 5.5-3-5.5-3v6Z"></path>
-                  </svg>
+                  <FaTiktok className="h-5 w-5 text-beige-700" />
                 </div>
                 <div>
                   <p className="font-medium text-beige-800">TikTok Shop</p>
-                  <a
-                    href={shopLinks.tiktok}
-                    className="text-beige-600 hover:underline"
-                  >
+                  <a href={shopLinks.tiktok} className="text-beige-600 hover:underline">
                     @wearnebula
                   </a>
                 </div>
@@ -105,16 +81,10 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
                 <div>
                   <p className="font-medium text-beige-800">Shopee</p>
                   <div className="space-y-1">
-                    <a
-                      href={shopLinks.shopee1}
-                      className="text-beige-600 hover:underline block"
-                    >
+                    <a href={shopLinks.shopee1} className="text-beige-600 hover:underline block">
                       Toko 1
                     </a>
-                    <a
-                      href={shopLinks.shopee2}
-                      className="text-beige-600 hover:underline block"
-                    >
+                    <a href={shopLinks.shopee2} className="text-beige-600 hover:underline block">
                       Toko 2
                     </a>
                   </div>
@@ -142,9 +112,7 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
               </motion.div>
             </div>
 
-            <h3 className="text-xl font-semibold text-beige-800 mt-10 mb-6">
-              Kirim Pesan
-            </h3>
+            <h3 className="text-xl font-semibold text-beige-800 mt-10 mb-6">Kirim Pesan</h3>
             <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-beige-700 mb-1">
@@ -176,9 +144,7 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
                   className="w-full px-4 py-2 border border-beige-200 rounded-md focus:outline-none focus:ring-2 focus:ring-beige-500"
                 ></textarea>
               </div>
-              <Button className="w-full bg-beige-600 hover:bg-beige-700 text-white">
-                Kirim Pesan
-              </Button>
+              <Button className="w-full bg-beige-600 hover:bg-beige-700 text-white">Kirim Pesan</Button>
             </form>
           </motion.div>
 
@@ -190,7 +156,7 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
             transition={{ duration: 0.7, delay: 0.4 }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4062406785533!2d108.4875632!3d-6.720181900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee1347f734def%3A0xf2241cbd84623b53!2sAmalia%20Collection!5e0!3m2!1sen!2sid!4v1744172456829!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4062406785533!2d108.4875632!3d-6.720181900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee1347f734def%3A0xf2241cbd84623b53!2sAmalia%20Collection!5e0!3m2!1sen!2sid!4v1744186912776!5m2!1sen!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -202,5 +168,5 @@ export default function ContactSection({ shopLinks }: ContactSectionProps) {
         </div>
       </div>
     </section>
-  );
+  )
 }

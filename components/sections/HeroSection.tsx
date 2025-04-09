@@ -1,7 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ShoppingBag, Phone } from "lucide-react"
+import { ShoppingBag } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -62,13 +63,13 @@ export default function HeroSection({ shopLinks }: HeroSectionProps) {
             >
               <a href="#katalog">
                 <Button className="bg-beige-600 hover:bg-beige-700 text-white px-6 py-6">
-                  <ShoppingBag className="h-5 w-5 mr-2" />
+                  <ShoppingBag className="h-5 w-5" />
                   Lihat Katalog
                 </Button>
               </a>
               <a href={shopLinks.whatsapp} target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-beige-600 text-beige-700 hover:bg-beige-50 px-6 py-6">
-                  <Phone className="h-5 w-5 mr-2" />
+                  <FaWhatsapp className="h-5 w-5" />
                   Hubungi Kami
                 </Button>
               </a>

@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { Phone, ShoppingBag } from "lucide-react"
+import { ShoppingBag } from "lucide-react"
+import { FaWhatsapp, FaTiktok } from "react-icons/fa";
 import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
 
@@ -62,7 +63,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1 text-xs bg-green-500 text-white py-2 px-3 rounded-md hover:bg-green-600 transition-colors"
             >
-              <Phone className="h-3 w-3" />
+              <FaWhatsapp className="h-3 w-3" />
               WhatsApp
             </a>
             <a
@@ -71,20 +72,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1 text-xs bg-black text-white py-2 px-3 rounded-md hover:bg-gray-800 transition-colors"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 8v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5Z"></path>
-                <path d="m10 12 5.5-3-5.5-3v6Z"></path>
-              </svg>
+              <FaTiktok className="h-3 w-3" />
               TikTok
             </a>
             <a

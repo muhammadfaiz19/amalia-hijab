@@ -1,5 +1,7 @@
 "use client"
 import AboutSection from "@/components/AboutSection"
+import CatalogSection from "@/components/CatalogSection"
+import ContactSection from "@/components/ContactSection"
 import HeroSection from "@/components/HeroSection"
 import Navbar from "@/components/Navbar"
 
@@ -12,12 +14,57 @@ export default function Home() {
     maps: "https://maps.app.goo.gl/TuaCCiMg7uVhT3mD9?g_st=ic",
   }
   
+  const products = [
+    {
+      id: 1,
+      name: "Arabian Voile",
+      description: "Bahan premium yang ringan dan nyaman",
+      image: "/arabian-voile.webp",
+      category: "Pashmina",
+      shopLinks: shopLinks,
+    },
+    {
+      id: 2,
+      name: "Daily Hijab Bergo Rayon",
+      description: "Praktis untuk aktivitas sehari-hari",
+      image: "/daily-hijab-bergo-rayon.webp",
+      category: "Bergo",
+      shopLinks: shopLinks,
+    },
+    {
+      id: 3,
+      name: "Hijab Sekolah Serut LX",
+      description: "Nyaman untuk pelajar, mudah diatur",
+      image: "/hijab-sekolah-serut-lx.webp",
+      category: "Sekolah",
+      shopLinks: shopLinks,
+    },
+    {
+      id: 4,
+      name: "Pashmina Ceruty",
+      description: "Lembut dan jatuh, mudah dibentuk",
+      image: "/pashmina-ceruty.webp",
+      category: "Pashmina",
+      shopLinks: shopLinks,
+    },
+    {
+      id: 5,
+      name: "Pasmina Kaos Rayon",
+      description: "Nyaman untuk aktivitas sehari-hari",
+      image: "/pashmina-kaos-rayon.webp",
+      category: "Pashmina",
+      shopLinks: shopLinks,
+    },
+  ]
+
   return (
     <>
       <Navbar />
       <main className="flex flex-col">
         <HeroSection shopLinks={shopLinks} />
         <AboutSection />
+        <CatalogSection products={products} />
+        <ContactSection shopLinks={shopLinks} />
       </main>
     </>
   )

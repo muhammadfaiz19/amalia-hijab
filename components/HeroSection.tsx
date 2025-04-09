@@ -89,6 +89,7 @@ export default function HeroSection({ shopLinks }: HeroSectionProps) {
                 <Image 
                   src="/store.webp" 
                   alt="Toko Amalia Hijab" 
+                  
                   fill 
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Amalia Hijab",
     images: [
       {
-        url: "/thumbnail.jpg", 
+        url: "/thumbnail.png", 
         width: 1200,
         height: 630,
         alt: "Amalia Hijab",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Amalia Hijab - Grosir Hijab Sekolah & Pashmina Premium",
     description:
       "Temukan koleksi hijab sekolah dan pashmina premium dari Amalia Hijab. Supplier hijab terpercaya dengan harga grosir dan kualitas terbaik.",
-    images: ["/thumbnail.jpg"], 
+    images: ["/thumbnail.png"], 
   },
 };
 

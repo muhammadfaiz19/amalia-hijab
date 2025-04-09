@@ -15,7 +15,6 @@ interface HeroSectionProps {
 export default function HeroSection({ shopLinks }: HeroSectionProps) {
   return (
     <section id="home" className="relative py-16 md:py-32 overflow-hidden">
-      {/* Background Pattern */}
       <div className="absolute inset-0 bg-beige-50 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-beige-200 rounded-full opacity-50 blur-3xl"></div>
         <div className="absolute top-1/2 -left-24 w-80 h-80 bg-beige-300 rounded-full opacity-40 blur-3xl"></div>

@@ -186,6 +186,10 @@
   .hover\:bg-beige-700:hover { background-color: var(--beige-700); }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: var(--container-max-width-2xl);
   margin-left: auto;

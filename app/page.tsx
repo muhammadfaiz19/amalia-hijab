@@ -4,32 +4,17 @@ import CatalogSection from "@/components/sections/CatalogSection"
 import ContactSection from "@/components/sections/ContactSection"
 import HeroSection from "@/components/sections/HeroSection"
 import Navbar from "@/components/Navbar"
-import { useEffect } from "react"
 import Footer from "@/components/Footer"
+import ScrollProgress from "@/components/ScrollProgress"
+import BackToTop from "@/components/BackToTop"
+import { useEffect } from "react"
 
-export default function Home() {
+export default function Home() {  
+
   useEffect(() => {
-    const handleHashLinkClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
-      if (target.tagName === "A" && target.getAttribute("href")?.startsWith("#")) {
-        e.preventDefault()
-        const href = target.getAttribute("href")
-        if (href) {
-          const element = document.querySelector(href)
-          if (element) {
-            window.scrollTo({
-              top: element.getBoundingClientRect().top + window.scrollY - 80,
-              behavior: "smooth",
-            })
-          }
-        }
-      }
-    }
-
-    document.addEventListener("click", handleHashLinkClick)
-    return () => document.removeEventListener("click", handleHashLinkClick)
+    window.scrollTo(0, 0)
   }, [])
-
+  
   const shopLinks = {
     whatsapp: "https://wa.me/6287813057256",
     tiktok: "https://www.tiktok.com/@wearnebula?_t=ZS-8vMg35SnYkD&_r=1",
@@ -83,6 +68,7 @@ export default function Home() {
 
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main className="flex flex-col">
         <HeroSection shopLinks={shopLinks} />
@@ -91,6 +77,8 @@ export default function Home() {
         <ContactSection shopLinks={shopLinks} />
       </main>
       <Footer shopLinks={shopLinks}   />
+      <BackToTop />
+
     </>
   )
 }

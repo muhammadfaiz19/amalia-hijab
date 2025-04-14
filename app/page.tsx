@@ -26,6 +26,14 @@ export default function Home() {
   const products = [
     {
       id: 1,
+      name: "Hijab Sekolah Serut LX",
+      description: "Nyaman untuk pelajar, mudah diatur",
+      image: "/hijab-sekolah-serut-lx.webp",
+      category: "Sekolah",
+      shopLinks: shopLinks,
+    },
+    {
+      id: 2,
       name: "Arabian Voile",
       description: "Bahan premium yang ringan dan nyaman",
       image: "/arabian-voile.webp",
@@ -33,21 +41,14 @@ export default function Home() {
       shopLinks: shopLinks,
     },
     {
-      id: 2,
+      id: 3,
       name: "Daily Hijab Bergo Rayon",
       description: "Praktis untuk aktivitas sehari-hari",
       image: "/daily-hijab-bergo-rayon.webp",
       category: "Bergo",
       shopLinks: shopLinks,
     },
-    {
-      id: 3,
-      name: "Hijab Sekolah Serut LX",
-      description: "Nyaman untuk pelajar, mudah diatur",
-      image: "/hijab-sekolah-serut-lx.webp",
-      category: "Sekolah",
-      shopLinks: shopLinks,
-    },
+    
     {
       id: 4,
       name: "Pashmina Ceruty",

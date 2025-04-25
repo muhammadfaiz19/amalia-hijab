@@ -46,7 +46,10 @@ export const metadata: Metadata = {
     title: "Amalia Hijab - Grosir Hijab Sekolah & Pashmina Premium",
     description:
       "Temukan koleksi hijab sekolah dan pashmina premium dari Amalia Hijab. Supplier hijab terpercaya dengan harga grosir dan kualitas terbaik.",
-    images: ["/thumbnail.png"], 
+    images: ["/thumbnail.png"],
+    other: {
+  "google-site-verification": "3KtIIf-Luv_BCeKeJM2EYfVWe1PoEe6fUiWK7TLY3EM",
+},
   },
 };
 

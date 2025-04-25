@@ -47,9 +47,6 @@ export const metadata: Metadata = {
     description:
       "Temukan koleksi hijab sekolah dan pashmina premium dari Amalia Hijab. Supplier hijab terpercaya dengan harga grosir dan kualitas terbaik.",
     images: ["/thumbnail.png"],
-    other: {
-  "google-site-verification": "3KtIIf-Luv_BCeKeJM2EYfVWe1PoEe6fUiWK7TLY3EM",
-},
   },
 };
 
@@ -60,6 +57,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={rubik.className}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="3KtIIf-Luv_BCeKeJM2EYfVWe1PoEe6fUiWK7TLY3EM"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
